@@ -1,0 +1,10 @@
+---
+- hosts: test
+  become: yes
+  tasks:
+  - name: put some words into a .txt file, then make a directory
+    shell: echo this is a test > thisisatest.txt; mkdir success
+  - name: install vim
+    dnf:
+        name: vim-enhanced
+        state: latest
