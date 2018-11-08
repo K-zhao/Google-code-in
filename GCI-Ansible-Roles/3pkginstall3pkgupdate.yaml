@@ -1,0 +1,28 @@
+---
+- hosts: test
+  become: yes
+  tasks:
+  - name: install latest nano
+    dnf:
+        name: nano
+        state: latest
+  - name: install latest vim
+    dnf:
+        name: vim-enhanced
+        state: latest
+  - name: install latest chromium
+    dnf:
+        name: chromium
+        state: latest
+  - name: install latest audacity
+    dnf:
+        name: audacity
+        state: latest
+  - name: install latest gimp
+    dnf:
+        name: gimp
+        state: latest
+  - name: install latest gparted
+    dnf:
+        name: gparted
+        state: latest
