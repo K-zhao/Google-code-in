@@ -2,27 +2,14 @@
 - hosts: test
   become: yes
   tasks:
-  - name: install latest nano
+  - name: install latest nano, vim, chromium, audacity, gimp, gparted
     dnf:
-        name: nano
+        name: "{{ item }}"
         state: latest
-  - name: install latest vim
-    dnf:
-        name: vim-enhanced
-        state: latest
-  - name: install latest chromium
-    dnf:
-        name: chromium
-        state: latest
-  - name: install latest audacity
-    dnf:
-        name: audacity
-        state: latest
-  - name: install latest gimp
-    dnf:
-        name: gimp
-        state: latest
-  - name: install latest gparted
-    dnf:
-        name: gparted
-        state: latest
+    loop:
+        - nano
+        - vim-enhanced
+        - chromium
+        - audacity
+        - gimp
+        - gparted
