@@ -7,7 +7,7 @@
         name: "{{ item }}"
         state: latest
     loop:
-        - nano
+        - nano 
         - vim-enhanced
         - chromium
         - audacity

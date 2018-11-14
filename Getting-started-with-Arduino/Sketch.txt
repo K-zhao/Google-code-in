@@ -1,0 +1,19 @@
+int brightness = 0; 
+
+void setup() {
+Serial.begin(9600);
+pinMode(9, OUTPUT); //initializes pin 9 for output
+Serial.println("print the brightness value that you want"); //serial monitor initializes with a message
+}
+void loop() {
+
+while (Serial.available()) { //runs code only when serial monitor is up. It's a loop.
+delay(1000); 
+char c = Serial.read(); //takes input from serial monitor and puts it into a variable
+brightness += c; 
+}
+
+analogWrite(9,brightness); //outputs brightness value to LED using PWM
+  Serial.println(brightness); //prints brightness value into monitor
+  delay(3000); //prevents the current brightness value from being spammed in the monitor
+}
