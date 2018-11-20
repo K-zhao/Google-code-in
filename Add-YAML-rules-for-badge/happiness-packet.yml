@@ -1,0 +1,9 @@
+%YAML 1.2
+---
+
+#Metadata about the badge
+name:           Happiness Packet
+description:    You submitted your first happiness packet!
+creator:        kevheavy
+discussion:     https://pagure.io/fedora-badges/issue/627
+image_url:      https://pagure.io/fedora-badges/issue/raw/files/30fa69d6ac64bb557c099238fde9d19ab4ee84ccec0fb13df60cc6b1b0786bd6-627-happiness_packets-2.png
