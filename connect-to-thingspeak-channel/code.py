@@ -19,7 +19,7 @@ while True:
     result = instance.read()
     Temperature = result.temperature
     Humidity = result.humidity
-    baseURL = http://api.thingspeak.com/update?api_key=AP8KDTTOGBDP69ES&field1=Temperature&field2=Humidity
+    baseURL = "http://api.thingspeak.com/update?api_key=AP8KDTTOGBDP69ES&field1=Temperature&field2=Humidity"
     f = urllib2.urlopen(baseURL)
     f.read()
     f.close()
