@@ -23,4 +23,6 @@ while True:
     f = urllib2.urlopen(baseURL)
     f.read()
     f.close()
-    time.sleep(5)
+    print(Temperature)
+    print(Humidity)
+    time.sleep(2)
