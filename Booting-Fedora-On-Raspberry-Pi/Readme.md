@@ -10,4 +10,8 @@ Information for this guide was sourced from [here.](https://fedoraproject.org/wi
 Look here for any additional information. The guide will provide sufficient information for a base install.
 
 ### Windows
-1. Download [Etcher.](https://www.balena.io/etcher/)
+1. Download and install [Etcher.](https://www.balena.io/etcher/)
+2. Download the appropriate version of Fedora ARM that you want on your Pi. The guide will use the Fedora 29 Workstation [image.](https://fedoraproject.org/wiki/Architectures/ARM/Raspberry_Pi#aarch64_supported_images_for_Raspberry_Pi_3)
+3. - Launch Etcher. ![Etcher](https://github.com/K-zhao/Google-code-in/blob/master/Booting-Fedora-On-Raspberry-Pi/Screenshot.png)
+   - Choose your image, then flash it. ![Etcher](https://github.com/K-zhao/Google-code-in/blob/master/Booting-Fedora-On-Raspberry-Pi/Screenshot2.png)
+   - 
