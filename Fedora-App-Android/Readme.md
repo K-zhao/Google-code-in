@@ -18,6 +18,6 @@ App was tested in two scenarios.
 
 **Battery Use**: Drain rate is acceptable. 
 
-![Photo]()
-![Photo]()
-![Photo]()
+![Photo](https://github.com/K-zhao/Google-code-in/blob/master/Fedora-App-Android/Photo3.png)
+![Photo](https://github.com/K-zhao/Google-code-in/blob/master/Fedora-App-Android/Photo.png)
+![Photo](https://github.com/K-zhao/Google-code-in/blob/master/Fedora-App-Android/Photo2.png)
