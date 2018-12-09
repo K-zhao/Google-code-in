@@ -21,10 +21,9 @@ Under source management, link the repository where you will be storing the file 
 
 Copy and paste the following
 
-` sed -e 's|status||' /path/to/inputfile > /path/to/outputfile`
+` sed -i 's|status||' /path/to/inputfile`
 
-In my case, I will be using `sed -e 's|status||' test.txt > output.txt`
+In my case, I will be using `sed -i 's|status||' test.txt`
+`
 
-The `-e` flag is to signal a script. The structure of the script is as follows.
-
-`'s|pattern|newpattern|`
+The `-i` flag means in place, so the file changes will occur within the file. 
