@@ -1,0 +1,53 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-title>
+      <img src="./assets/img/Fedora.svg" height="24px" alt="Fedora">
+    </ion-title>
+    <ion-buttons end>
+      <button tappable (click)="openNotificationPage()">
+        <img src="./assets/img/notification.svg">
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-row [ngClass]="{'hidden':!loggedIn,'login':true}">
+    <div class="avatar">A</div>
+    <!--Login details-->
+    <div class="details">
+      <h1>Abhishek Sharma</h1>
+      <h2>@thelittlewonder</h2>
+    </div>
+  </ion-row>
+  <ion-list no-lines class="menu">
+    <button ion-item (click)="itemSelected('account')" [ngClass]="{'hidden':!loggedIn}">
+      <img src="./assets/img/more-account.svg">
+      <span>Account</span>
+    </button>
+    <button ion-item (click)="itemSelected('login')" [ngClass]="{'hidden':loggedIn}">
+        <img src="./assets/img/more-account.svg">
+        <span>Login to FAS</span>
+      </button>
+    <button ion-item (click)="itemSelected('package')">
+      <img src="./assets/img/more-search.svg">
+      <span>Search Packages</span>
+    </button>
+    <button ion-item (click)="itemSelected('podcast')">
+      <img src="./assets/img/more-podcast.svg">
+      <span>Fedora Podcast</span>
+    </button>
+    <button ion-item (click)="itemSelected('bookmarks')">
+      <img src="./assets/img/more-bookmark.svg">
+      <span>Bookmarks</span>
+    </button>
+    <button ion-item (click)="itemSelected('about')">
+      <img src="./assets/img/fedora.png">
+      <span>About Fedora</span>
+    </button>
+    <button ion-item (click)="itemSelected('logout')" [ngClass]="{'hidden':!loggedIn}">
+      <img src="./assets/img/more-logout.svg">
+      <span>Logout</span>
+    </button>
+  </ion-list>
+</ion-content>

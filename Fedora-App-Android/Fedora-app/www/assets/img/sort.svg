@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="10px" viewBox="0 0 7 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.1 (55044) - http://www.bohemiancoding.com/sketch -->
+    <title>ion-ios-arrow-thin-down - Ionicons</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Magazine" transform="translate(-337.000000, -67.000000)" fill="#7096D0" stroke="#7096D0" stroke-width="0.4">
+            <g id="Dynamic-group" transform="translate(0.000000, 52.000000)">
+                <g id="12:16" transform="translate(16.000000, 13.000000)">
+                    <g id="Group" transform="translate(275.000000, 0.500000)">
+                        <path d="M52.3440415,8.35625 C52.3813473,8.39375019 52.4,8.44999963 52.4,8.525 C52.4,8.60000037 52.3813473,8.65624981 52.3440415,8.69375 C50.7212355,10.1750074 49.9005184,10.9249999 49.8818655,10.94375 C49.8445596,10.9812502 49.7886016,11 49.7139898,11 C49.6393781,11 49.5834201,10.9812502 49.5461142,10.94375 L47.0839382,8.69375 C46.9720206,8.58124944 46.9720206,8.46875056 47.0839382,8.35625 C47.1958559,8.24374944 47.3077719,8.24374944 47.4196895,8.35625 L49.4901557,10.240625 L49.4901557,2.225 C49.4901557,2.07499925 49.5647663,2 49.7139898,2 C49.8632134,2 49.937824,2.07499925 49.937824,2.225 L49.937824,10.240625 L52.0082902,8.35625 C52.1202078,8.24374944 52.2321238,8.24374944 52.3440415,8.35625 Z" id="ion-ios-arrow-thin-down---Ionicons"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

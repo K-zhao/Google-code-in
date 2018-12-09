@@ -1,0 +1,39 @@
+<ion-header class="pkg-head">
+  <ion-title>
+    <img src="./assets/img/back.svg" navPop>
+    <span>Fedora Package Search</span>
+  </ion-title>
+  <ion-searchbar [(ngModel)]="searchQuery" (cancel)="clear()" (change)="search()" autocorrect="off" placeholder="Enter a package name...">
+  </ion-searchbar>
+</ion-header>
+
+
+<ion-content class="pkg-content">
+  <ion-list>
+    <div *ngIf="packages.length > 0">
+      <ion-label>Showing {{ matches }} results</ion-label>
+      <ion-item (click)="showPackage(pkg)" tappable *ngFor="let pkg of packages">
+        <ion-avatar item-start>
+          <img width="32" height="32" src="https://apps.fedoraproject.org/packages/images/icons/{{ pkg.name }}.png" />
+        </ion-avatar>
+        <ion-col>
+          <ion-row style="margin-bottom: 4px">
+            <ion-col>
+              <ion-card-header>
+                <span>
+                  {{ pkg.name }}
+                </span>
+              </ion-card-header>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-card-content>{{ pkg.summary }}</ion-card-content>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-item>
+    </div>
+    <no-results *ngIf="showError"></no-results>
+  </ion-list>
+</ion-content>

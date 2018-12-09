@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="5px" viewBox="0 0 7 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.1 (55044) - http://www.bohemiancoding.com/sketch -->
+    <title>ion-android-arrow-dropup - Ionicons</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ask" transform="translate(-16.000000, -114.000000)" fill="#3C6EB4">
+            <g id="Group-6-Copy" transform="translate(0.000000, 93.000000)">
+                <g id="Dynamic-group">
+                    <g id="16:16" transform="translate(16.000000, 16.000000)">
+                        <g id="Group-5" transform="translate(0.000000, 5.000000)">
+                            <path d="M0.077671631,3.98592291 L3.06393098,0.146446609 C3.18205252,-0.0054239485 3.40092437,-0.0327829291 3.55279492,0.085338616 C3.5756216,0.103092698 3.59614884,0.123619933 3.61390292,0.146446609 L6.60016226,3.98592291 C6.76969728,4.20389651 6.73043006,4.51803431 6.51245646,4.68756933 C6.42469002,4.75583211 6.31667409,4.79289322 6.20548616,4.79289322 L0.47234774,4.79289322 C0.196205365,4.79289322 -0.0276522603,4.56903559 -0.0276522603,4.29289322 C-0.0276522603,4.18170529 0.00940884385,4.07368935 0.077671631,3.98592291 Z" id="ion-android-arrow-dropup---Ionicons"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

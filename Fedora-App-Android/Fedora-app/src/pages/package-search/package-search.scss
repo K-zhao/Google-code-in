@@ -1,0 +1,86 @@
+.pkg-head {
+  padding: 16px 24px;
+  background-color: #fff;
+  span {
+    font-family: "Montserrat-Regular";
+    font-size: 16px;
+    color: #9A9FA6;
+    letter-spacing: 0.57px;
+    margin: 0 0 16px 16px;
+    text-transform: uppercase;
+  }
+  .toolbar-title {
+    padding: 0 !important;
+  }
+  .searchbar {
+    padding: 16px 0 0 0;
+    .searchbar-search-icon {
+      right: 90%;
+      background-image: url(../assets/img/search.svg);
+    }
+    .searchbar-input {
+      box-shadow: none;
+      padding: 8px 12px 8px 48px;
+      line-height: 2.5rem;
+      border: 1px solid transparent;
+      font-family: "OpenSans-Regular";
+      background: rgba(239, 240, 241, 0.50);
+      &:focus {
+        background: #fff;
+        border: 1px solid rgba(#3B6FBB, 0.5);
+      }
+    }
+  }
+  &::after {
+    background-image: none;
+    box-shadow: 0 2px 4px 0 rgba(86, 86, 86, 0.05);
+  }
+}
+
+.pkg-content {
+  [col-1],
+  [col-11] {
+    padding: 0 !important;
+  }
+  .col{
+    padding:0;
+    ion-icon{
+      color: unset;
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+  }
+  background-color: #EFF0F1 !important;
+  ion-list {
+    margin: 0 !important;
+  }
+  .card {
+    padding: 12px 16px;
+    margin: 0 0 2px 0;
+    width: 100%;
+    background-color: #fff !important;
+    box-shadow: none;
+  }
+  .emptystate {
+    height: 50vh;
+  }
+  .card-header {
+    font-family: "OpenSans-Semibold";
+    font-size: 14px;
+    color: #3B6FBB;
+    line-height: 20px;
+    padding: 0;
+  }
+  ion-label {
+    padding: 16px 16px 12px 16px;
+    background-color: #fff;
+    margin: 0;
+  }
+  .card-content {
+    font-family: "OpenSans-Regular";
+    font-size: 12px;
+    color: #535961;
+    line-height: 20px;
+    padding: 0;
+  }
+}

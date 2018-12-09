@@ -1,0 +1,40 @@
+{
+  "_from": "cordova-android-support-gradle-release@^1.4.4",
+  "_id": "cordova-android-support-gradle-release@1.4.7",
+  "_inBundle": false,
+  "_integrity": "sha512-3hDS3mBjSAEzKM4gZBze8G02/aNQgcww1CyUneuYPOYvleTPk3Q4OYkjmHHuE4FEgr4v9EY6j6bJqoX9pMZHgg==",
+  "_location": "/cordova-android-support-gradle-release",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-android-support-gradle-release@^1.4.4",
+    "name": "cordova-android-support-gradle-release",
+    "escapedName": "cordova-android-support-gradle-release",
+    "rawSpec": "^1.4.4",
+    "saveSpec": null,
+    "fetchSpec": "^1.4.4"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-android-support-gradle-release/-/cordova-android-support-gradle-release-1.4.7.tgz",
+  "_shasum": "25a31030e0c1abef737fac2ba8dd7827e34616e4",
+  "_spec": "cordova-android-support-gradle-release@^1.4.4",
+  "_where": "/home/kevinzhao/Fedora-app",
+  "author": {
+    "name": "Dave Alden"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "semver": "5.1.0",
+    "xml2js": "~0.4.19"
+  },
+  "deprecated": false,
+  "description": "Cordova/Phonegap plugin to align various versions of the Android Support libraries specified by other plugins to a specific version",
+  "devDependencies": {},
+  "license": "MIT",
+  "name": "cordova-android-support-gradle-release",
+  "version": "1.4.7"
+}

@@ -1,0 +1,43 @@
+<!--
+Template for the meeting detail
+-->
+
+<ion-header>
+    <ion-title>
+        <img src="./assets/img/back.svg" tappable navPop>
+        <span>Meeting Details</span>
+    </ion-title>
+</ion-header>
+<ion-content>
+    <h1>{{meeting.name}}</h1>
+    <hr>
+    <ion-row>
+        <div class="info">
+            <ion-label>Description</ion-label>
+            <p [innerHTML]="meeting.description"></p>
+        </div>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <div class="info">
+                <ion-label>Date</ion-label>
+                <p>{{meeting.time.toLocaleDateString([], { month: 'long', year: 'numeric', day: '2-digit' })}}</p>
+            </div>
+        </ion-col>
+        <ion-col>
+            <div class="info">
+                <ion-label>Time</ion-label>
+                <p [innerHTML]="meeting.time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit'}) + ' - ' + meeting.timeEnd.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })"></p>
+            </div>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <div class="info">
+            <ion-label>Location</ion-label>
+            <p>{{meeting.location}}</p>
+        </div>
+    </ion-row>
+    <button tappable (click)="addToCalendar(meeting)">
+        Add to Calendar
+    </button>
+</ion-content>

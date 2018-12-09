@@ -1,0 +1,25 @@
+<!--
+Template for the Fedora Podcast Page
+-->
+
+<ion-header>
+  <ion-title>
+    <img src="./assets/img/back.svg" tappable navPop>
+    <span>Fedora Podcast</span>
+  </ion-title>
+</ion-header>
+<ion-content>
+  <ion-card *ngFor="let podcast of podcasts" tappable (click)="openPodcastPlayer(podcast)">
+    <div class="icon">
+      <img src="./assets/img/play.svg">
+    </div>
+    <div class="desc">
+      <ion-card-header>
+        {{podcast.title}}
+      </ion-card-header>
+      <ion-card-content>
+        Episode {{podcast.number}} • {{podcast.displayTime}} mins
+      </ion-card-content>
+    </div>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,89 @@
+page-view-package {
+    ion-header {
+        padding: 16px 24px;
+        background-color: #fff;
+        span {
+            font-family: "Montserrat-Regular";
+            font-size: 16px;
+            color: #9A9FA6;
+            letter-spacing: 0.57px;
+            margin: 0 0 16px 16px;
+            text-transform: uppercase;
+        }
+        .toolbar-title {
+            padding: 0 !important;
+        }
+    }
+    .header-md::after {
+        background-color: #ECEDEE;
+        background-image: none;
+    }
+    .scroll-content {
+        padding: 24px !important;
+        h1 {
+            margin: 0 0 12px 0;
+            font-family: "OpenSans-Semibold";
+            font-size: 16px;
+            color: #3C6EB4;
+            line-height: 20px;
+        }
+        p {
+            margin: 16px 0 8px 0;
+        }
+        hr {
+            height: 0;
+            background-color: none;
+            border: 1px solid #EFF0F1;
+            margin: 0;
+        }
+        .info {
+            margin: 12px 0;
+            max-width: 100%;
+            ion-label {
+                margin: 0 0 6px 0;
+                font-size: 11px;
+            }
+            p {
+                margin: 0;
+            }
+            .code {
+                margin-top: 4px;
+                code {
+                    background: #f0f0f0;
+                    border-radius: 3px;
+                    padding: 4px;
+                }
+            }
+            ion-item {
+                margin-top: 4px;
+                padding: 0;
+                h2 {
+                    font-family: "OpenSans-Semibold";
+                    font-size: 14px;
+                    color: #3B6FBB;
+                    padding: 0;
+                    text-transform: none;
+                    letter-spacing: 0;
+                }
+                h3 {
+                    font-family: "OpenSans-Regular";
+                    font-size: 12px;
+                    color: #535961;
+                    line-height: 20px;
+                    padding: 0;
+                    text-transform: none;
+                    letter-spacing: 0;
+                }
+            }
+        }
+    }
+    .package-header {
+        .package-icon {
+            width: 128px;
+            height: 128px;
+            margin-right: 1em;
+        }
+        display: flex;
+        align-items: center;
+    }
+}

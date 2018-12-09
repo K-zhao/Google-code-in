@@ -1,0 +1,56 @@
+<!--Calendar Page Template-->
+<ion-header no-border>
+  <ion-navbar>
+    <ion-title>
+      <img src="./assets/img/Fedora.svg" height="24px" alt="Fedora">
+    </ion-title>
+    <ion-buttons end>
+      <button tappable (click)="openNotificationPage()">
+        <img src="./assets/img/notification.svg">
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content class="calendar">
+  <ion-label>
+    <span class="label">Select a calendar</span>
+    <div (click)="showSearch()">
+      <span> {{selectedCalendar.realName}} </span>
+      <img src="./assets/img/dropdown.svg">
+    </div>
+  </ion-label>
+  <ion-segment [(ngModel)]="showEventsBy" (ionChange)="onSegmentChange()">
+    <ion-segment-button value="upcoming">
+      Upcoming Events
+    </ion-segment-button>
+    <ion-segment-button value="past">
+      Past Events
+    </ion-segment-button>
+  </ion-segment>
+  <ion-list>
+    <div *ngIf="meetings.length !== 0">
+      <ion-card *ngFor="let meeting of meetings">
+        <ion-row>
+          <ion-col col-3 class="date" text-center (click)="openMeetingDetails(meeting)">
+            <p class="month">{{meeting.time.toLocaleDateString([], { month: 'short' })}}</p>
+            <p class="day">{{meeting.time.toLocaleDateString([], { day: '2-digit' })}} </p>
+          </ion-col>
+          <ion-col col-8 class="details">
+            <ion-card-header class="body-title" (click)="openMeetingDetails(meeting)">{{meeting.name}}</ion-card-header>
+            <ion-card-content>
+              <p class="time" (click)="openMeetingDetails(meeting)">
+                <img src="./assets/img/clock.svg">
+                <span [innerHTML]="meeting.time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit'}) + ' - ' + meeting.timeEnd.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })"></span>
+              </p>
+              <p class="add">
+                <img src="./assets/img/calendar.svg">
+                <button tappable (click)="addToCalendar(meeting)">Add to Calendar</button>
+              </p>
+            </ion-card-content>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </div>
+  </ion-list>
+  <no-meetings *ngIf="meetings.length === 0"></no-meetings>
+</ion-content>

@@ -1,0 +1,48 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-title>
+      <img src="./assets/img/Fedora.svg" height="24px" alt="Fedora">
+    </ion-title>
+    <ion-buttons end>
+      <button tappable (click)="openNotificationPage()">
+        <img src="./assets/img/notification.svg">
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content class="questions">
+    <ion-segment [(ngModel)]="showQuestionsBy" (ionChange)="onSegmentChange()">
+      <ion-segment-button value="new">
+        Latest
+      </ion-segment-button>
+      <ion-segment-button value="votes">
+        Most Voted
+      </ion-segment-button>
+      <ion-segment-button value="answers">
+        Popular
+      </ion-segment-button>
+    </ion-segment>
+    <ion-list>
+      <ion-list *ngIf="questions.length !== 0">
+        <ion-card *ngFor="let question of questions" tappable (click)="openQuestion(question)">
+          <ion-row>
+            <ion-col col-1>
+              <img src="./assets/img/upvote.svg">
+              <span>{{question.score}}</span>
+              <img src="./assets/img/downvote.svg">
+            </ion-col>
+            <ion-col col-11>
+              <ion-card-header class="body-title" text-wrap>
+                {{question.title}}
+              </ion-card-header>
+              <ion-label *ngFor="let tag of question.tags">
+                {{tag}}
+              </ion-label>
+              <ion-card-content [innerHTML]="'<strong>'+ question.answerCount + ' Answers' + '</strong>'+ ' • ' + question.addedAt" class="body-subtitle">
+              </ion-card-content>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-list>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,27 @@
+<!--
+Template for the Women and Diversity Page
+-->
+
+<ion-header>
+  <ion-title>
+    <img src="./assets/img/back.svg" tappable navPop>
+    <span>Women and Diversity</span>
+  </ion-title>
+</ion-header>
+<ion-content>
+  <p>
+    The Fedora Project welcomes and encourages participation by everyone. Our community is based on mutual respect, tolerance,
+    and encouragement, and we are working to help each other live up to these principles. Please, refer to
+    <a (click)="this.browser.open('https://fedoraproject.org/wiki/Diversity_and_Inclusion?rd=Diversity')">our Code of Conduct</a>
+    if you need more information. Fedora Diversity and Inclusion team is committed to fostering diversity and inclusion in Fedora
+    community.
+  </p>
+  <ion-list *ngIf="blogposts.length !== 0">
+    <ion-label class="label">Latest Updates</ion-label>
+    <ion-card *ngFor="let blogpost of blogposts" tappable (click)="openUpdate(blogpost)">
+      <ion-card-header [innerHTML]="blogpost.title" class="body-title"></ion-card-header>
+      <ion-card-content [innerHTML]="blogpost.publishedAt" class="body-subtitle">
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>

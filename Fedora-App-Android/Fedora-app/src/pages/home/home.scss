@@ -1,0 +1,73 @@
+page-home {
+    ion-content {
+        background-color: #EFF0F1 !important;
+    }
+    ion-slides {
+        height: auto;
+    }
+    ion-slide.swiper-slide {
+        align-items: flex-start;
+    }
+    .slide-zoom {
+        img {
+            padding: 0.25em;
+        }
+    }
+    .latest {
+        .label {
+            background-color: #fff;
+            padding: 13px 16px;
+            margin: 0;
+        }
+        ion-segment {
+            padding: 0px 24px 0 24px;
+            background-color: #fff;
+        }
+        .segment-button {
+            font-family: "Montserrat-Light";
+            font-size: 12px;
+            color: #9A9FA6;
+            text-transform: none;
+            padding: 0;
+        }
+        .segment-activated {
+            font-family: "Montserrat-SemiBold";
+            font-size: 12px;
+            color: #3C6EB4;
+            padding: 0;
+        }
+    }
+    .card {
+		padding: 16px 24px;
+		background-color: #FFFFFF!important;
+		box-shadow: none;
+		margin: 4px 0;
+		width: 100%;
+	}
+	.card-header{
+		padding: 0!important;
+	}
+	.card-content{
+		margin-top: 8px;
+		padding: 0!important;
+	}
+	ion-card{
+		img{
+			width: auto;
+			float: left;
+			margin-right: 12px;
+		}
+		span{
+			display: block;
+		}
+		.active-title{
+			margin-bottom: 4px;
+		}
+		ion-icon{
+			margin-right: 5px;
+		}
+	}
+	.social{
+		margin-top: 16px!important;
+	}
+}

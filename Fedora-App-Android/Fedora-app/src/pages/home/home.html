@@ -1,0 +1,62 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-title>
+      <img src="./assets/img/Fedora.svg" height="24px" alt="Fedora">
+    </ion-title>
+    <ion-buttons end>
+      <button tappable (click)="openNotificationPage()">
+        <img src="./assets/img/notification.svg">
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides autoplay="3000" centeredSlides effect="fade" loop speed="700" *ngIf="carousel.length !== 0">
+    <ion-slide *ngFor="let post of carousel" tappable (click)="openUpdate(post)">
+      <a href="{{post.link}}">
+        <img src="{{post.image}}">
+      </a>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="latest">
+    <ion-label>Latest from the community </ion-label>
+    <ion-segment [(ngModel)]="latestActive">
+      <ion-segment-button value="blog">
+        Community Blog
+      </ion-segment-button>
+      <ion-segment-button value="social">
+        Social Media
+      </ion-segment-button>
+    </ion-segment>
+    <div [ngSwitch]="latestActive">
+      <ion-list *ngSwitchCase="'blog'">
+        <ion-list *ngIf="blogposts.length !== 0">
+          <ion-card *ngFor="let blogpost of blogposts" tappable (click)="openUpdate(blogpost)">
+            <ion-card-header [innerHTML]="blogpost.title" class="body-title"></ion-card-header>
+            <ion-card-content [innerHTML]="blogpost.publishedAt" class="body-subtitle">
+            </ion-card-content>
+          </ion-card>
+        </ion-list>
+      </ion-list>
+      <ion-list *ngSwitchCase="'social'">
+        <ion-list *ngIf="socialposts.length !== 0">
+          <ion-card *ngFor="let update of socialposts" tappable (click)="openUpdate(update)">
+            <ion-card-header>
+              <img src="./assets/img/fedora_colored.svg" height="34px">
+              <div>
+                <span class="active-title">Fedora</span>
+                <span class="body-subtitle">
+                  <ion-icon name="logo-{{ update.origin }}" color="fedoraltblue"></ion-icon>
+                  {{update.date}}
+                </span>
+              </div>
+            </ion-card-header>
+            <ion-card-content [innerHTML]="update.content" class="content social"></ion-card-content>
+          </ion-card>
+        </ion-list>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>

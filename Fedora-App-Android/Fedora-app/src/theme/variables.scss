@@ -1,0 +1,133 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+// Font path is used to include ionicons
+$font-path: "../assets/fonts";
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+@import "ionic.globals";
+// Fonts
+// --------------------------------------------------
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url($font-path+'/montserrat-light-webfont.woff2') format('woff2'), url('../assets/fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url($font-path+'/montserrat-regular-webfont.woff2') format('woff2'), url('../assets/fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url($font-path+'/montserrat-semibold-webfont.woff2') format('woff2'), url('../assets/fonts/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url($font-path+'/opensans-regular-webfont.woff2') format('woff2'), url('../assets/fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url($font-path+'/opensans-semibold-webfont.woff2') format('woff2'), url('../assets/fonts/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url($font-path+'/opensans-bold-webfont.woff2') format('woff2'), url('../assets/fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+$colors: ( primary: #3C6EB4,
+fedorablue: #3C6EB4,
+fedoraltblue: #7096D0,
+bgcolor: #EFF0F1,
+dark: #000,
+light: #fff,
+bgaccent: #E8EFF8,
+darkgrey: #535961,
+grey: #79818B,
+ltgrey: #9A9FA6,
+);
+// Typographic Styles
+.label {
+    font-family: "Montserrat-Regular";
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #9A9FA6;
+    letter-spacing: 0.43px;
+    line-height: 12px;
+}
+
+.body-title {
+    font-family: "OpenSans-Semibold";
+    font-size: 14px !important;
+    color: #000000 !important;
+    line-height: 20px !important;
+}
+
+.active-title {
+    @extend .body-title;
+    color: #3C6EB4;
+}
+
+.body-subtitle {
+    font-family: "OpenSans-Regular";
+    font-size: 10px !important;
+    color: #535961 !important;
+    line-height: 10px;
+}
+
+.content {
+    @extend .body-subtitle;
+    font-size: 14px !important;
+    line-height: 20px !important;
+}
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+@import "ionic.theme.default";
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+@import "ionic.ionicons";

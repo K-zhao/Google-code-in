@@ -1,0 +1,215 @@
+.calendar {
+    background-color: #EFF0F1 !important;
+    .card {
+        padding: 16px 24px;
+        background-color: #FFFFFF !important;
+        box-shadow: none;
+        margin: 4px 0;
+        width: 100%;
+    }
+    .card-header {
+        padding: 0 !important;
+    }
+    .card-content {
+        margin-top: 8px;
+        padding: 0 !important;
+    }
+    ion-label {
+        background-color: #fff;
+        padding: 12px 16px;
+        margin: 0 !important;
+        div {
+            display: inline;
+            float: right;
+        }
+    }
+    .emptystate {
+        height: 50vh;
+    }
+    ion-row {
+        .date {
+            background-color: rgba(#E8EFF8, 0.5);
+            padding: 8px 14px;
+            .month {
+                font-family: "OpenSans-Bold";
+                font-size: 14px;
+                color: #396CB6;
+                text-transform: uppercase;
+                line-height: 14px;
+            }
+            .day {
+                /* 25: */
+                font-family: "OpenSans-Bold";
+                font-size: 26px;
+                color: #396CB6;
+                line-height: 26px;
+            }
+        }
+        .details {
+            margin-left: 16px;
+            padding: 0 !important;
+            .card-content {
+                margin-top: 0 !important;
+            }
+            ion-card-content {
+                img {
+                    width: auto;
+                    height: 12px;
+                    margin-right: 4px;
+                }
+                p {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+                .time {
+                    margin: 3px 0 6px 0;
+                    span {
+                        font-family: "OpenSans-Regular";
+                        font-size: 12px;
+                        color: #535961;
+                    }
+                }
+                .add {
+                    img {
+                        margin-right: 6px;
+                    }
+                    button {
+                        font-family: "OpenSans-Semibold";
+                        font-size: 13px;
+                        color: #396CB6;
+                        background-color: transparent;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+searchpage {
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    background-image: none;
+    .header::after {
+        background-image: none;
+        box-shadow: 0 2px 4px 0 rgba(86, 86, 86, 0.05);
+    }
+    ion-content {
+        [col-1],
+        [col-11] {
+            padding: 0 !important;
+        }
+        background-color: #EFF0F1 !important;
+        ion-list {
+            margin: 0 !important;
+        }
+        .card {
+            padding: 12px 16px;
+            margin: 0 0 2px 0;
+            width: 100%;
+            background-color: #fff !important;
+            box-shadow: none;
+        }
+        .card-header {
+            font-family: "OpenSans-Semibold";
+            font-size: 14px;
+            color: #3B6FBB;
+            line-height: 20px;
+            padding: 0;
+        }
+        .card-content {
+            font-family: "OpenSans-Regular";
+            font-size: 12px;
+            color: #535961;
+            line-height: 20px;
+            padding: 0;
+        }
+    }
+}
+
+searchpage,
+meetingdetails {
+    ion-header {
+        padding: 16px 24px;
+        background-color: #fff;
+        span {
+            font-family: "Montserrat-Regular";
+            font-size: 16px;
+            color: #9A9FA6;
+            letter-spacing: 0.57px;
+            margin: 0 0 16px 16px;
+            text-transform: uppercase;
+        }
+        .toolbar-title {
+            padding: 0 !important;
+        }
+        .searchbar {
+            padding: 16px 0 0 0;
+            .searchbar-search-icon {
+                right: 90%;
+                background-image: url(../assets/img/search.svg);
+            }
+            .searchbar-input {
+                box-shadow: none;
+                padding: 8px 12px 8px 48px;
+                line-height: 2.5rem;
+                border: 1px solid transparent;
+                font-family: "OpenSans-Regular";
+                background: rgba(239, 240, 241, 0.50);
+                &:focus {
+                    background: #fff;
+                    border: 1px solid rgba(#3B6FBB, 0.5);
+                }
+            }
+        }
+    }
+}
+
+meetingdetails {
+    .header-md::after {
+        background-color: #ECEDEE;
+        background-image: none;
+    }
+    .scroll-content {
+        padding: 24px !important;
+        h1 {
+            margin: 0 0 12px 0;
+            font-family: "OpenSans-Semibold";
+            font-size: 16px;
+            color: #3C6EB4;
+            line-height: 20px;
+        }
+        hr {
+            height: 0;
+            background-color: none;
+            border: 1px solid #EFF0F1;
+            margin: 0;
+        }
+        .info {
+            margin: 12px 0;
+            max-width: 100%;
+            ion-label {
+                margin: 0 0 6px 0;
+                font-size: 11px;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        button {
+            margin-top: 12px;
+            background-color: #3C6EB4;
+            width: 100%;
+            padding: 14px;
+            font-family: "OpenSans-Semibold";
+            font-size: 14px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+    }
+}

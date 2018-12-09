@@ -1,0 +1,37 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-title>
+      <img src="./assets/img/Fedora.svg" height="24px" alt="Fedora">
+    </ion-title>
+    <ion-buttons end>
+      <button tappable (click)="openNotificationPage()">
+        <img src="./assets/img/notification.svg">
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="mag">
+  <ion-label>Latest Articles from Magazine
+    <button (click)="presentActionSheet()">Sort
+      <img src='./assets/img/sort.svg'>
+    </button>
+  </ion-label>
+  <ion-list>
+    <ion-card *ngFor="let post of posts let i = index">
+      <ion-row>
+        <ion-col col-7>
+          <ion-card-header [innerHTML]="post.title" class="body-title" text-wrap tappable (click)="openPost(post)"></ion-card-header>
+          <ion-card-content>
+            <span [innerHTML]="post.publishedAt + ' — ' + post.comments + ' comments'" class="body-subtitle"></span>
+            <img [src]=bookmarkIcon[i] tappable (click)="addToBookmark(post,i)" class="bookmark">
+          </ion-card-content>
+        </ion-col>
+        <ion-col col-5 tappable (click)="openPost(post)">
+          <img src="{{post.featuredImage}}" class="card-image">
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-list>
+  <button (click)="loadMore()" class="load" ng-if="posts.length!==0">Load More Posts</button>
+</ion-content>

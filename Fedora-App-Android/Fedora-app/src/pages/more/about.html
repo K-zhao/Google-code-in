@@ -1,0 +1,17 @@
+<!--
+Template for the bookmarks page
+-->
+
+<ion-header>
+  <ion-title>
+    <img src="./assets/img/back.svg" tappable navPop>
+    <span>About Fedora</span>
+  </ion-title>
+</ion-header>
+<ion-content>
+  <ion-list no-lines>
+    <button ion-item *ngFor="let item of navItems" (click)="openAboutDetailPage(item)" icon-start>
+      {{ item.title }}
+    </button>
+  </ion-list>
+</ion-content>

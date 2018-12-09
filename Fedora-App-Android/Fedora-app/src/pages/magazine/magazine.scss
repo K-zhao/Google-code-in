@@ -1,0 +1,79 @@
+.mag {
+  background-color: #EFF0F1 !important;
+  ion-card {
+    padding: 16px;
+    background-color: #FFFFFF !important;
+    box-shadow: none;
+    margin: 4px 0 !important;
+    width: 100%;
+    ion-card-header {
+      padding: 0 !important;
+    }
+    ion-card-content {
+      margin-top: 4px;
+      padding: 0 !important;
+      .bookmark {
+        height: 14px;
+        vertical-align: middle;
+        margin-left: 8px;
+        display: inline-block;
+        width: auto;
+      }
+    }
+    .card-image {
+      padding-left: 8px;
+    }
+    [col-5],
+    [col-7] {
+      padding: 0 !important;
+    }
+  }
+  .list-md {
+    margin: 0 !important;
+  }
+  .label {
+    background-color: #fff;
+    padding: 13px 16px;
+    margin: 4px 0 0 0;
+    button {
+      background: transparent;
+      font-family: "Montserrat-Regular";
+      font-size: 12px;
+      color: #7096D0;
+      letter-spacing: 0.37px;
+      text-transform: uppercase;
+      float: right;
+    }
+  }
+  .load {
+    text-align: center;
+    font-family: "OpenSans-Semibold";
+    padding: 14px;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #3C6EB4;
+    width: 100%;
+    margin: 4px 0 0px 0;
+  }
+}
+
+.action-sheet-group {
+  .action-sheet-title {
+    font-family: "Montserrat-Regular";
+    font-size: 12px;
+    color: #9A9FA6;
+    letter-spacing: 0.43px;
+    border-bottom: 1px solid #EFF0F1;
+  }
+  button {
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    color: #000000;
+    text-align: left;
+    line-height: 20px;
+  }
+  .active {
+    font-family: "OpenSans-Semibold";
+    color: #3C6EB4;
+  }
+}

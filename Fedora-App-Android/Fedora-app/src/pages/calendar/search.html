@@ -1,0 +1,34 @@
+<!--
+Template for the modal window for search
+-->
+
+<ion-header>
+    <ion-title>
+        <img src="./assets/img/back.svg" tappable navPop>
+        <span>Select a Calendar</span>
+    </ion-title>
+    <ion-searchbar [(ngModel)]="query" (ionInput)="onInput($event.target.value)" placeholder="Enter a team or calendar name...">
+    </ion-searchbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-card *ngFor="let calendar of calendars let i = index">
+            <ion-row style="margin-bottom: 6px">
+                <ion-col col-1 style="padding-right: 4px!important" tappable (click)="subscribeToCal(calendar,i)">
+                    <img [src]=calendarIcon[i] height="18px">
+                </ion-col>
+                <ion-col col-11 tappable (click)="this.viewCtrl.dismiss({ 'calendarChoice' : calendar.realName});">
+                    <ion-card-header>{{calendar.displayName}}</ion-card-header>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-1></ion-col>
+                <ion-col col-11 tappable (click)="this.viewCtrl.dismiss({ 'calendarChoice' : calendar.realName});">
+                    <ion-card-content>{{calendar.description}}</ion-card-content>
+                </ion-col>
+            </ion-row>
+        </ion-card>
+    </ion-list>
+    <no-results *ngIf="calendars.length===0"></no-results>
+</ion-content>

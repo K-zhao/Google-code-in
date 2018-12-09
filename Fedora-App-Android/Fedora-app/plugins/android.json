@@ -1,0 +1,57 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-spinner-dialog": {
+      "PACKAGE_NAME": "com.fedoraqa.fedora"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.fedoraqa.fedora"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.fedoraqa.fedora"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.fedoraqa.fedora"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.fedoraqa.fedora"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.fedoraqa.fedora"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
+      "PACKAGE_NAME": "com.fedoraqa.fedora"
+    },
+    "cordova-plugin-calendar": {
+      "PACKAGE_NAME": "com.fedoraqa.fedora"
+    },
+    "cordova-plugin-native-spinner": {
+      "PACKAGE_NAME": "com.fedoraqa.fedora"
+    },
+    "cordova-plugin-x-toast": {
+      "PACKAGE_NAME": "com.fedoraqa.fedora"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.fedoraqa.fedora"
+    },
+    "cordova-android-support-gradle-release": {
+      "ANDROID_SUPPORT_VERSION": "27.+",
+      "PACKAGE_NAME": "com.fedoraqa.fedora"
+    },
+    "cordova-plugin-custombrowser": {
+      "PACKAGE_NAME": "com.fedoraqa.fedora"
+    }
+  },
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.fedoraqa.fedora"
+    }
+  }
+}

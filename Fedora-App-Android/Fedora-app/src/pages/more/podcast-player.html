@@ -1,0 +1,44 @@
+<!--
+Template for the Fedora Podcast Player
+-->
+
+<ion-header>
+  <ion-title>
+    <img src="./assets/img/back.svg" tappable navPop (click)="toggleTabs('flex')">
+    <span>Episode {{selectedPodcast.number}}</span>
+  </ion-title>
+</ion-header>
+<ion-content>
+  <!--Loader Component-->
+  <div class="loader" *ngIf="loaderState">
+    <div class="loader-ellipsis">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!--Player Component-->
+  <div class="player">
+    <img src="./assets/img/podcastbanner.png" class="banner">
+    <h1>{{selectedPodcast.title}}</h1>
+    <h2>{{selectedPodcast.description}}</h2>
+    <div class="progress">
+      <progress [value]=progressValue max="1"></progress>
+      <div class="time">
+        <span>{{currTime}}</span>
+        <span>{{totalLength}}</span>
+      </div>
+    </div>
+    <div class="controls">
+      <button tappable (click)="rewind()">
+        <img src="./assets/img/player-rewind.svg">
+      </button>
+      <button tappable (click)="togglePlay()">
+        <img [src]=playerIcon>
+      </button>
+      <button tappable (click)="forward()">
+        <img src="./assets/img/player-forward.svg">
+      </button>
+    </div>
+  </div>
+</ion-content>
