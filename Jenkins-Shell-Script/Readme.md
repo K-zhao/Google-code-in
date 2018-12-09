@@ -19,8 +19,18 @@ Under source management, link the repository where you will be storing the file 
 
 ![Screenshot](https://github.com/K-zhao/Google-code-in/blob/master/Jenkins-Shell-Script/Screenshot2.png)
 
-Copy and paste the following
+Copy and paste the following:
 
-` sed -i 's|status||' /path/to/inputfile.txt`
+`#!/bin/bash`
 
-The `-i` flag means in place, so the file changes will occur within the file. The structure of the `'s|status||'` is as follows: `'s|old_word|changed_word|'` A blank between the pipes means to replace the word with nothing.
+`sed -i 's|status||' /path/to/inputfile.txt`
+
+`cat /path/to/inputfile.txt`
+
+The `-i` flag means in place, so the file changes will occur within the file. The structure of the `'s|status||'` is as follows: `'s|old_word|changed_word|'` A blank between the pipes means to replace the word with nothing. The `cat` command is to read back the final result to the terminal.
+
+Click `Save` at the bottom of the page.
+
+## Step 3 - Running the build
+
+Click `Build now`, which is located in the left side of the page. You can then view the results in the `Console Output` tab, which can be found by clicking the Build History number.
