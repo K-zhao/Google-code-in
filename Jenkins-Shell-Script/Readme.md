@@ -21,9 +21,6 @@ Under source management, link the repository where you will be storing the file 
 
 Copy and paste the following
 
-` sed -i 's|status||' /path/to/inputfile`
+` sed -i 's|status||' /path/to/inputfile.txt`
 
-In my case, I will be using `sed -i 's|status||' test.txt`
-`
-
-The `-i` flag means in place, so the file changes will occur within the file. 
+The `-i` flag means in place, so the file changes will occur within the file. The structure of the `'s|status||'` is as follows: `'s|old_word|changed_word|'` A blank between the pipes means to replace the word with nothing.
