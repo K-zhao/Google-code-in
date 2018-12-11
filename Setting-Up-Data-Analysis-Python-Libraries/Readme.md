@@ -71,7 +71,7 @@ Use `sudo pip3 install pandas` in the terminal.
 
 Issue commands `sudo pip3 install pandas_datareader` and `sudo dnf install python3-tkinter`. They are dependencies that need to be installed in order for the example code to run.
 
-The example code is here, and can be copy pasted into a test.py file. Execute the file with python3 test.py through terminal.
+The example code is here, and can be copy pasted into a test.py file. Execute the file with `python3 test.py` through terminal.
 
 ```python
 import datetime
